@@ -1,7 +1,7 @@
 <template>
     <div id="app">
         <a-layout id="components-layout-demo-responsive">
-            <a-layout-sider breakpoint="lg">
+            <a-layout-sider class="d-none d-md-block">
                 <div class="logo" />
                 <a-menu theme="dark" mode="inline" class="text-center">
                     <a-menu-item key="1">
@@ -60,9 +60,5 @@ export default {
 
 #components-layout-demo-responsive {
     min-height: 100vh;
-}
-
-#test {
-    height: 100%;
 }
 </style>
