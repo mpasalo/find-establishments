@@ -1,5 +1,5 @@
 <template>
-    <div class="container text-center">
+    <div class="text-center">
         <div class="m-4">
             <a-dropdown>
                 <a-menu slot="overlay">
@@ -21,17 +21,19 @@
                 </a-button>
             </a-dropdown>
         </div>
-        <iframe
-            width="600"
-            height="450"
-            frameborder="0"
-            style="border:0"
-            :src="
-                `https://www.google.com/maps/embed/v1/search?key=${this.apiKey}&q=${this.$store.state.selectedPlace}+near+me`
-            "
-            allowfullscreen
-        >
-        </iframe>
+        <div class="m-4">
+            <iframe
+                width="100%"
+                height="500"
+                frameborder="0"
+                style="border:0"
+                :src="
+                    `https://www.google.com/maps/embed/v1/search?key=${this.apiKey}&q=${this.$store.state.selectedPlace}+near+me`
+                "
+                allowfullscreen
+            >
+            </iframe>
+        </div>
     </div>
 </template>
 
